@@ -1,0 +1,400 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* navbar menu home & form*/
+#navbar-example {
+  border-radius: unset;
+  background-color: rgb(252, 210, 50);
+  padding: 25px 30px;
+  color: black;
+  margin: 0;  
+}
+.myBtn{
+  margin-top: 8px;
+  margin-left: 40px;
+}
+.myBtn:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 5px grey;
+}
+.navbar-brand {
+  position: relative;
+}
+nav img {
+  width: 40px;
+  margin-left: 60px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#navbar-example ul li a {
+  color: black;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: rgb(240, 200, 55);
+  color: black;
+  border-radius: 4px;
+  transition: all .6s; 
+}
+
+/* sidebar home & form*/
+.navigation {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.toggle-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  align-items: flex-end;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 0%;
+}
+.toggle-nav:hover {
+  cursor: pointer;
+}
+.toggle-nav div {
+  width: 100%;
+  height: 6px;
+  background-color: rgb(48, 47, 56);
+  margin: 3px;
+}
+.toggle-nav div:nth-child(2) {
+  width: 75%;
+}
+.toggle-nav div:nth-child(3) {
+  width: 50%;
+}
+.sidebar {
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 100%;
+  background-color: rgb(48, 47, 56);
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  overflow-x: hidden;
+  transition: width 0.5s ease-in-out;
+}
+.sidebar a {
+  width:fit-content;
+  color: rgb(134, 134, 134);
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+.myBtn-sidebar {
+  width:fit-content;
+  margin: 10px 0 0 20px;
+}
+.sidebar a:hover {
+  color: white;
+}
+/* close button on sidebar */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+/* HOME */
+/* title */
+.title {
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title-opc {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.title h1 {
+  margin: 0;
+  padding: 200px 0;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+}
+
+
+/* projekt menu */
+.projekt-menu {
+  list-style: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(48, 47, 56);
+}
+.menu-items {
+  padding: 25px 60px 25px 25px;
+  border-right: 1px solid rgb(70, 70, 80);
+  position: relative;
+}
+.menu-items:last-of-type {
+    border-right: none;
+}
+.menu-items.active {
+  background-color: rgb(236, 60, 60);
+  color: rgb(48, 47, 56);
+}
+.menu-items i {
+  font-size: 36px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right:20px;
+  display: none;
+}
+.menu-items.active i {
+  display: block;
+}
+.menu-items:hover {
+  cursor: pointer;
+}
+
+/* project cards */
+.projects {
+  background-color: rgb(252, 210, 50);
+  padding-bottom: 120px;
+}
+.project-cards h1 {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  margin: 50px 0;
+}
+.card {
+  background-color: white;
+  padding: 0px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px gray;
+  border-radius: 15px;
+  transition: all .2s;
+  position: relative;
+}
+ .card-holder {
+  margin-bottom: 30px;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px gray;
+}
+.card-img {
+  padding: 0;
+  border-radius: 15px 15px 0px 0px;
+}
+.card-body {
+  padding: 20px;
+}
+.card-direction {
+  background-color: rgb(252, 210, 50);
+  width: fit-content;
+  padding: 7px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-duration {
+  font-weight: 600;
+  margin: 20px 0 60px 0;
+}
+.card-button {
+  padding: 7px 30px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* footer home & form*/
+.footer {
+  background-color: rgb(48, 47, 56);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer p {
+  margin: 0;
+} 
+
+
+ /* FORM */
+.forma {
+  background-color: rgb(252, 210, 50);
+  padding-bottom: 250px;
+}
+.forma h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 70px 0 120px 0;
+}
+.inpt {
+  padding: 25px 12px;
+}
+.inpt::placeholder {
+  font-style:italic;
+}
+.dropdown-menu.open {
+  margin-top: 25px;
+  padding: 0;
+}
+.inpt-btn-label {
+  color: rgb(252, 210, 50);
+}
+.inpt-btn {
+  padding: 15px 12px;
+}
+.filter-option-inner-inner {
+  padding: 9px;
+}
+.dropdown-menu.open a {
+  margin: 0px;
+  padding: 10px 25px;
+  border-bottom: 1px solid rgb(240, 200, 55);
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: rgb(240, 200, 55);
+}
+
+/* responsiveness */
+@media screen and (max-width: 1200px) {
+  #navbar-example ul li a {
+    margin-right: 0px;
+    padding:15px 5px;
+  }
+  .myBtn{
+    margin-left: 5px;
+  }
+  nav img {
+    margin: 0;
+  }
+}  
+
+@media screen and (max-width: 991px) {
+  .forma {
+    padding-bottom: 200px;
+  }
+  #myNavbar ul {
+    display: none;
+  }
+} 
+
+@media screen and (min-width: 992px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title h1 {
+    padding:100px 0;
+    letter-spacing: 1px;
+  }
+  .project-cards h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .menu-items {
+    border-bottom: 1px solid rgb(70, 70, 80);
+    padding:15px 25px;;
+  }
+  .card-holder {
+    padding:0 10px;
+  }
+  .forma {
+    padding-bottom: 30px;
+  }
+  .forma h1 {
+    font-size: 40px;
+    margin: 50px 0 30px 0;
+  }
+  .button-form-group {
+    margin-top: 200px;
+  }
+  .projects{
+    padding-bottom: 60px;
+  }
+} 
+
+@media screen and (max-width: 425px) {
+  .title h1 {
+    font-size: 40px;
+  }
+  .menu-items{
+    font-size: 13px;
+  }
+  .menu-items i {
+    font-size: 26px;
+  }
+  .forma h1 {
+    font-size: 30px;
+    margin: 50px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .menu-items i {
+    font-size: 18px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    right:0;
+    display: none;
+  }
+  .sidebar a {
+    font-size:13px;
+  }
+  .myBtn-sidebar {
+    font-size:11px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
